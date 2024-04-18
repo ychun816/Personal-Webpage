@@ -2,13 +2,18 @@
 /* background-overlay*/
 .body {
     background-color: #FFFF;
+    /* margin-left: 0px;
+    margin-right: 0px; */
 }
 .background-grain {
     background-image: url(https://ucarecdn.com/9b028010-239e-4c2d-97cf-8d3ad8ea9590/grain.png);
+    background-size: ;
+    background-position: 50%;
     width: 100%;
     height: 100%;
     opacity: 0.05;
     position: fixed;
+    margin: 0px;
     top: 0;
     left: 0;
     z-index: -1;
@@ -90,7 +95,6 @@
 .container-header .header-nav a:not(.header-search):not(.cart):hover:after {
     opacity: 1;
 }
-
 
 /* banners */
 .banners{
@@ -239,7 +243,7 @@
 .events-container .event-card .event-pic img{
     width: 100%;
     filter: grayscale(100%);
-    transition: transform 0.3s ease, color 1s ease-in-out;
+    transition: transform 0.3s ease, color .3s ease;
 }
 .events-container .event-card:hover .event-pic img{
     transform: scale(1.1);
@@ -304,7 +308,7 @@
     width: 100%;
     object-fit: cover;
     filter: grayscale(100%);
-    transition: transform 0.3s ease, color .5s ease-in-out;
+    transition: transform 0.3s ease, color .3s ease;
 }
 .news-cards:hover .news-pic{
     overflow: hidden;
@@ -393,7 +397,6 @@
     z-index: 0;
 }
 
-
 .section-caps-motion{
     margin: 40px 0px;
 }
@@ -403,7 +406,7 @@
 }
 .section-caps-motion {
     overflow: hidden; /* Ensure content doesn't overflow its container */
-    width: 100vw;
+    width: 100%;
     height: 100%;
     white-space: nowrap; /* Prevent text from wrapping */
 }
@@ -420,11 +423,11 @@
 }
 
 .merch-container{
-    width: calc(100%-40px);
+    /* width: calc(100%-40px); */
     display: flex;
     justify-content: space-evenly;
     margin: 0px 20px 40px 20px;
-    align-items: space-evenly;
+    align-items: ;
     position: relative;
     z-index: 1;
 }
@@ -461,6 +464,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-content: center;
     align-items: center;
     margin: 40px auto 40px auto;
 }
@@ -469,22 +473,13 @@
     font-family: 'Krona One', sans-serif;
     color: #4660BF;
     margin: 40px auto 25px auto;
-    text-align: center;
+    /* text-align: center; */
 }
 .input-bar{
-    width: 25%;
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    text-align: center;
     margin-bottom: 40px;
 }
-.input-bar img{
-    width: 100%;
-    transition: transform 0.3s ease;
-}
-.input-bar img:hover{
-    transform: translateY(-5px);
-}
-
 
 /* FOOTER */
 .footer-container{
@@ -565,20 +560,15 @@
 }
 .media-container .newsletter .input-bar{
     width: 70%;
-}
-.media-container .newsletter .input-bar img{
-    width: 100%;
-    height: 100%;
+    text-align: left;
 }
 .media-container .social-icons{
-    display: flex;
+    font-family: 'Krona One', sans-serif;
 }
 
 .media-container .social a img{
-    height: 70%;
-    display: flex;
-    text-align: start;
     transition: transform  0.3s ease;
+    margin-right: 5px;
 }
 .rights p{
     font-size: 12px; 
@@ -592,7 +582,6 @@
 }
 
 /*ABOUT PAGE*/
-
 .ABOUT-banners .main-banner{
     height: 250px;
     object-fit: cover;
